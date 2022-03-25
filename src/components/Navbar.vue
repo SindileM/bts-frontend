@@ -33,12 +33,12 @@
               </Link>
               <ul className="topList">
                 <li className="topListItem">
-                  <Link className="link" to="/login">
+                  <Link className="link" to="/signin">
                     LOGIN
                   </Link>
                 </li>
                 <li className="topListItem">
-                  <Link className="link" to="/register">
+                  <Link className="link" to="/signup">
                     REGISTER
                   </Link>
                 </li>

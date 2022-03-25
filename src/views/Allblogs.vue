@@ -3,7 +3,7 @@
             <li>
                 <div class="comment_card" data-depth="0">
                     <figure class="figure">
-                        <img class="image" src="https://newsfeedtemplate.netlify.com/img/user01.jpg" alt="Naveen Pantra"/>
+                        <img class="image" src="" alt="Naveen Pantra"/>
                         <figcaption class="fig_caption">
                             <h5 class="name">Naveen Pantra</h5>
                             <h6 class="occupation">Software Engineer</h6>

@@ -12,7 +12,7 @@ export default createStore ({
     },
     actions: {
         getDrivers(context){
-            fetch("http://capstone-final-backend.herokuapp.com/drivers")
+            fetch("")
             .then((res) => res.json())
             .then((data) => {
                 // COMMIT runs a MUTATION

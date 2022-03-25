@@ -33,7 +33,7 @@ export default {
       email: this.email,
       password: this.password,
   }
-    fetch('https://capstone-final-backend.herokuapp.com/subscribers', {
+    fetch('', {
      method: 'PATCH',
      body: JSON.stringify(subscriber),
   headers: {

@@ -2,7 +2,7 @@
   <section>
     
   <form @submit.prevent="register" class="form border">
-    <h2 class="form-heading">Register</h2>
+    <h2 class="form-heading">Signup</h2>
     <input
       class="form-input border-input"
       type="text"
@@ -27,7 +27,7 @@
       v-model="password"
       placeholder="Password"
     />
-    <button type="submit" class="form-btn border">Register</button>
+    <button type="submit" class="form-btn border"></button>
     <div>
       <p>Already have an account? <router-link to="/login" class="login">Login</router-link></p>
     </div>
@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     register(){
-    fetch('https://capstone-final-backend.herokuapp.com/subscribers', {
+    fetch('', {
       method: 'POST',
       body: JSON.stringify({
         name: this.name,
@@ -63,7 +63,7 @@ export default {
     if(!json.jwt) return alert("Could not register")
    localStorage.setItem("jwt", json.jwt);
    alert("User is signed up");
-   this.name='',
+   this.username='',
     this.email='',
     this.contact='',
     this.password='',
