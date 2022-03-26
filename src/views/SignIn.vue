@@ -1,6 +1,6 @@
 <template>
-  <form @submit.prevent="login" class="form border">
-    <h2 class="form-heading">Login</h2>
+  <form @submit.prevent="signin" class="form border">
+    <h2 class="form-heading">signin</h2>
     <input
       class="form-input border-input"
       type="email"
@@ -15,7 +15,7 @@
     />
     <button type="submit" class="form-btn border">Login</button>
     <div>
-      <p>Don't have an account? <router-link to="/register" class="register">Register</router-link></p>
+      <p>Don't have an account? <router-link to="/signup" class="signup">Register</router-link></p>
     </div>
   </form>
 </template>
@@ -29,13 +29,13 @@ export default {
   },
   methods: {
   login(){
-    const subscriber = {
+    const user = {
       email: this.email,
       password: this.password,
   }
     fetch('', {
      method: 'PATCH',
-     body: JSON.stringify(subscriber),
+     body: JSON.stringify(user),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
   }

@@ -2,7 +2,7 @@
   <section>
     
   <form @submit.prevent="register" class="form border">
-    <h2 class="form-heading">Signup</h2>
+    <h2 class="form-heading">SignUp</h2>
     <input
       class="form-input border-input"
       type="text"
@@ -29,7 +29,7 @@
     />
     <button type="submit" class="form-btn border"></button>
     <div>
-      <p>Already have an account? <router-link to="/login" class="login">Login</router-link></p>
+      <p>Already have an account? <router-link to="/signup" class="login">Login</router-link></p>
     </div>
   </form>
   </section>
@@ -67,7 +67,7 @@ export default {
     this.email='',
     this.contact='',
     this.password='',
-   this.$router.push({ name: "Login"});
+   this.$router.push({ name: "SignIn"});
     })
     .catch((err) => {
       alert(err);
